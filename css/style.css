@@ -1,0 +1,22 @@
+
+.content{
+	background-color: #e5e5e5;
+    padding: 100px;
+    margin-top: 100px;
+}
+label{
+	margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+button.btn.btn-light {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    font-weight: 500;
+}
+p{
+	font-size: 20px;
+	font-weight: 600;
+}

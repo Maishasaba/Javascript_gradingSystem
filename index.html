@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Grading System</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="content">
+					<label>Enter your marks:</label>
+				    <input type="text" class="form-control" id="text">
+				    <button type="button" class="btn btn-light" onclick="grade()">Check your GRADE</button>
+				    <!-- <label>Your Result:</label> -->
+				    <p id="display"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	var a_plus= "A+";
+	var a= "A";
+	var b_plus= "B+";
+	var a_minus= "B-";
+	var c= "C";
+	var d= "D";
+	var f= "F";
+	var result= "Your Grade is: "
+	function grade(){
+		var mygrade=document.getElementById("text").value;
+
+		// grade= A+
+		if (mygrade>=85) {
+			document.getElementById("display").innerHTML = result + a_plus;
+		}
+		else if (mygrade>80 && mygrade<85) {
+			document.getElementById("display").innerHTML = result + a;
+			
+		}
+		else if (mygrade>75 && mygrade<80) {
+			document.getElementById("display").innerHTML = result + b_plus;
+			
+		}
+		else if (mygrade>65 && mygrade<75) {
+			document.getElementById("display").innerHTML = result + b;
+			
+		}
+		else if (mygrade>55 && mygrade<65) {
+			document.getElementById("display").innerHTML = result + c;
+			
+		}
+		else if (mygrade>45 && mygrade<55) {
+			document.getElementById("display").innerHTML = result + d;
+			
+		}
+		else {
+			document.getElementById("display").innerHTML = result + f;
+		}
+	}
+
+</script>
+</body>
+</html>
